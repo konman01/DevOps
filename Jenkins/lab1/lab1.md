@@ -11,7 +11,7 @@ EXPOSE 5000
 ### Start the Docker
 
 ```
-# First create a image
+# First create jenkins image
 
 docker build -t konman01/jenkins -f Dockerfile.dev build .
 
@@ -53,13 +53,15 @@ volumes:
 docker compose up
 ```
 
+### Access the Jenkins in Port 8080
+```
+http://localhost:8080/
+```
+
 ### stop the container
 
 ```
 docker compose down
 ```
 
-### Access the Jenkins in Port 8080
-```
-http://localhost:8080/
-```
+
