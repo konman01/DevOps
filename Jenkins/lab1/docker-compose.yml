@@ -1,0 +1,15 @@
+version: '3'
+services:
+  jenkins:
+    build: 
+      dockerfile: Dockerfile
+    expose:
+      - 5000
+    ports:
+      - "8080:8080"
+      - "5001:5000"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+    restart: on-failure
+volumes:
+  jenkins_home:
