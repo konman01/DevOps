@@ -1,0 +1,49 @@
+# Build by pulling Jenkinsfile in github
+
+## Jenkinsfile in Github
+1. Create Jenkins file in root directory of a project and paste the following script
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
+```
+2. Check-in the script to github
+
+![lab3-2](https://user-images.githubusercontent.com/33331778/219998243-e6517269-352e-4620-9498-6000e1901e4a.png)
+
+## Create new Item
+
+1. Click on New Item 
+2. Give lab1-pipeline as Project Name
+3. Select Pipeline in the list and click okay
+
+![lab3-1](https://user-images.githubusercontent.com/33331778/219998100-8b585f37-5ed0-4139-9783-187d45578fe0.png)
+
+## Define SCM for Pipeline Sciprt
+
+1. From the Definition field, choose the Pipeline script from SCM option.
+2. From the SCM field, choose the type of source control system of the repository containing your Jenkinsfile.
+3. Give the git repository url where Jenkinsfile is created
+
+![lab3-3](https://user-images.githubusercontent.com/33331778/219998753-0be61c92-4f5e-4c81-8eae-05228488988f.png)
+
+## Build
+
+1. Go to the pipe line created
+2. Click on Build
+3. Click on console to check the logs
+
+![lab3-4](https://user-images.githubusercontent.com/33331778/219999084-9563e178-0c8f-43d6-b6c1-04a28a003ba1.png)
+![lab3-5](https://user-images.githubusercontent.com/33331778/219999089-d6f2938d-523c-46d5-8ed9-080b917d0831.png)
+
+
+
+
