@@ -53,10 +53,12 @@ volumes:
 docker compose up
 ```
 
-### Access the Jenkins in Port 8080
-```
-http://localhost:8080/
-```
+### Access Jenkins
+1. Go to http://localhost:8080/ in Browser
+1. Initial passwork will be printed on the logs when we start the container, use that key to login to Jenkins
+2. Click on the suggested plugins and install them
+3. Give the user details and define new username and password
+
 
 ### stop the container
 
