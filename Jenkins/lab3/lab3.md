@@ -1,7 +1,7 @@
 # Build by pulling Jenkinsfile in github
 
 ## Jenkinsfile in Github
-1. Create Jenkins file in root directory of a project and paste the following script
+1. Create Jenkins file in lab3 folder and paste the following script
 ```
 pipeline {
     agent any
@@ -17,7 +17,7 @@ pipeline {
 ```
 2. Check-in the script to github
 
-![lab3-2](https://user-images.githubusercontent.com/33331778/219998243-e6517269-352e-4620-9498-6000e1901e4a.png)
+![lab3-6](https://user-images.githubusercontent.com/33331778/220000626-ab176645-b1da-42ad-99d5-54f43ca410a0.png)
 
 ## Create new Item
 
@@ -32,8 +32,9 @@ pipeline {
 1. From the Definition field, choose the Pipeline script from SCM option.
 2. From the SCM field, choose the type of source control system of the repository containing your Jenkinsfile.
 3. Give the git repository url where Jenkinsfile is created
+4. As the Jenkinsfile is in the lab3 folder, define the path to the folder in Script Path
 
-![lab3-3](https://user-images.githubusercontent.com/33331778/219998753-0be61c92-4f5e-4c81-8eae-05228488988f.png)
+![lab3-7](https://user-images.githubusercontent.com/33331778/220001044-ddf0a766-a96b-4179-9f05-d24885780efb.png)
 
 ## Build
 
